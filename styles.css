@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 img,
@@ -563,7 +564,7 @@ video {
   font-family: "regular";
   font-size: 17.04px;
   line-height: 28.0649px;
-  letter-spacing:0;
+  letter-spacing: 0;
   font-weight: 400;
 
 }
@@ -625,126 +626,262 @@ video {
   width: 100%;
   display: block;
 }
-.so_much_more{
 
-padding: 0px 32px;
-max-width: 100rem;
-margin-left: auto;
-margin-right: auto;
-color: hsla(0,0%,13%,1);
+.so_much_more {
+
+  padding: 0px 32px;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: hsla(0, 0%, 13%, 1);
 }
-.so_much_more_heading{
 
-justify-content: center;
-flex-direction: column;
-display: flex;
-margin-bottom:48px ;
-margin-left: 0px;
-margin-right: opx;
-align-items: center;
-column-gap: 16px;
-}
-.so_much_more_heading_property{
-max-width: 20ch;
-font-family:"medium" ;
-border-radius: 32px;
-font-size: 35px;
-font-weight: 500;
-letter-spacing: -0.92px;
-line-height: 36.015px;
-font-feature-settings: "ss01", "ss02", "ss08";
+.so_much_more_heading {
 
-
-}
-.first_video{
-padding-bottom: 48px;
-gap: 64px;
-flex-direction: column;
-display:flex;
-margin-left: auto;
-margin-right: auto;
-
-
-}
-.first_video_property{
-background-color:#f0f1ff ;
-color: hsla(0,0%,13%,1);
-border-radius: 32px;
-
-}
-.first_video_sub_property{
-display: flex;
-flex-direction: column;
-margin-left: auto;
-margin-right: auto;
-padding: 64px 32px;
-background-color: #f0f1ff;
-row-gap: 32px;
-border-radius: 32px;
-}
-.so_much_more_vdo{
-  height:100%;
-  border-radius: 32px;
-  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 48px;
+  margin-left: 0px;
+  margin-right: opx;
   align-items: center;
-  
+  column-gap: 16px;
 }
 
-.first_vdo{
+.so_much_more_heading_property {
+  max-width: 20ch;
+  font-family: "medium";
+  border-radius: 32px;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: -0.92px;
+  line-height: 36.015px;
+  font-feature-settings: "ss01", "ss02", "ss08";
+}
+
+.padding_property {
+
+  padding-bottom: 48px;
+}
+
+.first_video_parent {
+  gap: 64px;
+  display: grid;
+}
+
+
+
+.first_video {
+  gap: 64px;
+  flex-direction: column;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first_video_property {
+  background-color: #f0f1ff;
+  color: hsla(0, 0%, 13%, 1);
+  border-radius: 32px;
+
+}
+
+.first_video_sub_property {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 32px;
+  background-color: #f0f1ff;
+  row-gap: 32px;
   border-radius: 32px;
 }
-.record_once{   
-align-items: left;
-justify-content: center;
-flex-direction: column;
-width: 100%;
-display:flex;
-margin-left: auto;
-margin-right: auto;
-column-gap: 16px;
- }
 
-.record_once_heading{
-font-family: "medium";
-font-weight:500 ;
-font-size:22px ;
-line-height: 28.006px;
-letter-spacing: -0.63px;
-font-feature-settings: "ss01", "ss02", "ss08";
-color:#2b1c50 ;
-margin-bottom: 16px;
+.so_much_more_vdo {
+  height: 100%;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+
 }
-.record_once_cnt{
+
+.first_vdo {
+  border-radius: 32px;
+
+
+}
+
+.record_once {
+  text-align: left;
+
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 16px;
+}
+
+.record_once_heading {
+  font-family: "medium";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28.006px;
+  letter-spacing: -0.63px;
+  font-feature-settings: "ss01", "ss02", "ss08";
+  color: #2b1c50;
+  margin-bottom: 16px;
+}
+
+.record_once_cnt p {
 
   max-width: 40ch;
   color: #3d2e7c;
   font-family: "regular";
-font-weight:400 ;
-font-size:17.04px ;
-line-height: 28.0649px;
-letter-spacing: -0.63px;
+  font-weight: 400;
+  font-size: 17.04px;
+  line-height: 28.0649px;
 
 }
-.link_record{
-font-weight: 500;
-align-items: center;
-display: flex;
-margin-top:24px ;
-justify-content:left;
-align-items: center;
-margin-right: 16px;
-margin-left: 4.984px;
-color:rgb(0, 0, 0) ;
-font-family: 'medium';
-font-size: 16px;
-margin:24px 0px 0px ;
 
-}
-.link_record_arrow{
+.link_record {
+  font-weight: 500;
   align-items: center;
-  display:flex;
+  display: flex;
+  margin-top: 24px;
+  justify-content: left;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 4.984px;
+  color: rgb(0, 0, 0);
+  font-family: 'medium';
+  font-size: 16px;
+  margin: 24px 0px 0px;
+
+}
+
+.link_record_arrow {
+  align-items: center;
+  display: flex;
   height: 20px;
   justify-content: center;
+  height: 24px;
+  width: 24px;
+}
 
-  
+.so_much_more {
+  padding: 0px 32px;
+
+}
+
+.second_video {
+
+  padding: 64px 32px;
+  border-radius: 32px;
+  background-color: #f0f1ff;
+
+}
+
+.record_gap {
+  margin-top: 32px;
+  max-width: 40ch;
+
+}
+
+.vdo_message_container {
+
+  padding-bottom: 80px;
+}
+
+.vdo_message_parent {
+  padding: 48px;
+  background-color: #f0f1ff;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.vdo_message_child {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 8px;
+
+}
+
+.vdo_message_child_content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.vdo_message_head {
+  column-gap: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.vdo_message_head h2 {
+  font-family: "medium";
+  font-feature-settings: "ss01", "ss02", "ss08";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 36.015px;
+  letter-spacing: -0.92px;
+  color: #2b1c50;
+  margin-bottom: 24px;
+}
+
+.vdo_message_para {
+  max-width: 50ch;
+  font-family: 'regular';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32.004px;
+  color: #3d2e7c;
+  margin-top: 16px;
+}
+
+.learn_btn {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 8px;
+  border-radius: 9999px;
+  padding: 14px 21px;
+  box-shadow:rgba(85, 89, 221, 0.4) 0px 0px 0px 3.99px ;
+  color: #f0f1ff;
+  gap: 14px;
+  width: fit-content;
+  font-size: 14px;
+  font-family: "medium";
+  font-feature-settings: "ss01", "ss02", "ss08";
+  font-weight: 500;
+  line-height: 23.996px;
+  letter-spacing: 0.09px;
+  background-color: rgb(86, 90, 221);
+}
+.vdo_message_section{
+margin-bottom: 64px;
+}
+.vdo_message_head{
+text-align: center;
+padding: 0px 32px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+display: flex;
+margin-bottom: 48px;
+margin-left: 0px;
+margin-right: 0px;
+gap: 16px;
+
+
 }
